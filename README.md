@@ -81,11 +81,6 @@ php artsian make:bundle:route User --namespace="integrations/User"
 ## Special thanks
 A special thanks to [esbenp](https://github.com/esbenp) for creating the distributed laravel structure that this package is build on
 
-
-## Special thanks
-A special thanks to [esbenp](https://github.com/esbenp) for creating the distributed laravel structure that this package is build on
-
-
 ## License
 [MIT](http://opensource.org/licenses/MIT)
 
