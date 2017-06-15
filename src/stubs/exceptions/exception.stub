@@ -1,0 +1,13 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyRootException as Exception;
+
+class DummyClass extends Exception
+{
+    public function __construct()
+    {
+        parent::__construct('DummyBundleName.');
+    }
+}

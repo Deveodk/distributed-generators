@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Routes
+ */
+
+$router->get('DummyRoute', 'DummyController@index');
+$router->get('DummyRoute/{id}', 'DummyController@find');
+$router->post('DummyRoute', 'DummyController@create');
+$router->put('DummyRoute/{id}', 'DummyController@update');
+$router->delete('DummyRoute/{id}', 'DummyController@delete');
