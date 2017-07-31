@@ -111,7 +111,7 @@ class ExceptionMakeCommand extends GeneratorCommand
         $stub = str_replace('DummyRootException', $this->baseNamespace, $stub);
         $stub = str_replace('DummyBundleName', $this->bundleName, $stub);
         $stub = str_replace('DummyNamespace',
-            $this->revertSlashToBackslash($this->namespace) . '\\' . $this->directory, $stub);
+            ucfirst($this->revertSlashToBackslash($this->namespace) . '\\' . $this->directory), $stub);
         return $stub;
     }
 

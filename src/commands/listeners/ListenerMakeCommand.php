@@ -90,7 +90,7 @@ class ListenerMakeCommand extends GeneratorCommand
         $name = $this->getFileName($name);
         $stub = str_replace('DummyClass', $name, $stub);
         $stub = str_replace('DummyNamespace',
-            $this->revertSlashToBackslash($this->namespace) . '\\' . $this->directory, $stub);
+            ucfirst($this->revertSlashToBackslash($this->namespace) . '\\' . $this->directory), $stub);
         return $stub;
     }
 

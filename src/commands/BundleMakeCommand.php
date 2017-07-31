@@ -209,7 +209,7 @@ class BundleMakeCommand extends GeneratorCommand
         $this->relativeNamespace = $namespace;
         $name = $this->getFileName($name);
         $stub = str_replace('DummyClass', $name, $stub);
-        $stub = str_replace('DummyNamespace', $namespace, $stub);
+        $stub = str_replace('DummyNamespace', ucfirst($namespace), $stub);
         return $stub;
     }
 
